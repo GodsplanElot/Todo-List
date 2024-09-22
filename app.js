@@ -82,6 +82,13 @@ document.getElementById('clear-completed').addEventListener('click', function() 
     completedTodos.forEach(todo => todo.remove());
   });
   
+
+  // Existing code...
+
+document.getElementById('toggle-mode').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+  });
+  
   
   
   

@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    .dark-mode .list-group-item {
+      background-color: #555;
+      color: #fff;
+    }
+  </style>
+  
 </head>
 <body>
   <div class="container">
@@ -16,7 +28,7 @@
     <button id="filter-all" class="btn btn-info my-2">All</button>
 
     <button id="filter-active" class="btn btn-info my-2">Active</button>
-    
+
     <button id="filter-completed" class="btn btn-info my-2">Completed</button>
     <button id="clear-completed" class="btn btn-danger my-2">Clear Completed</button>
     <button id="toggle-mode" class="btn btn-secondary my-2">Toggle Light/Dark Mode</button>
