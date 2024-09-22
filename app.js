@@ -44,6 +44,36 @@ document.getElementById('add-todo').addEventListener('click', function() {
       document.getElementById('new-todo').value = '';
     }
   });
+
+  // Existing code...
+
+document.getElementById('filter-all').addEventListener('click', function() {
+    const todos = document.querySelectorAll('#todo-list li');
+    todos.forEach(todo => todo.style.display = 'block');
+  });
+  
+  document.getElementById('filter-active').addEventListener('click', function() {
+    const todos = document.querySelectorAll('#todo-list li');
+    todos.forEach(todo => {
+      if (todo.classList.contains('completed')) {
+        todo.style.display = 'none';
+      } else {
+        todo.style.display = 'block';
+      }
+    });
+  });
+  
+  document.getElementById('filter-completed').addEventListener('click', function() {
+    const todos = document.querySelectorAll('#todo-list li');
+    todos.forEach(todo => {
+      if (todo.classList.contains('completed')) {
+        todo.style.display = 'block';
+      } else {
+        todo.style.display = 'none';
+      }
+    });
+  });
+  
   
   
   
