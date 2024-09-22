@@ -74,6 +74,14 @@ document.getElementById('filter-all').addEventListener('click', function() {
     });
   });
   
+
+  // Existing code...
+
+document.getElementById('clear-completed').addEventListener('click', function() {
+    const completedTodos = document.querySelectorAll('#todo-list li.completed');
+    completedTodos.forEach(todo => todo.remove());
+  });
+  
   
   
   
